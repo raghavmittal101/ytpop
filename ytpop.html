@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="ytpop.css">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+        <script src="https://rawgit.com/mozilla/popcorn-js/master/popcorn.js"></script>
+        <script src="js/popcorn-youtube.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>    
+    </head>    
+    <body>
+        <h1>hello world!</h1>
+        <p>So this a demo of plugin, lets see how it works.</p>
+        <div id="video"></div>
+        <div class="foot-container">
+            <div id="post-sec" hidden>
+                <form style="padding:10px 10px 0 10px;">
+                    <input type="text" id="username" style="font-size:1em;width:100%;" placeholder="username"><br>
+                    <input type="text" id="header" class="header" style="font-size:1.3em;width:100%;height:70px;" placeholder="title"><br>
+                    <textarea id="annotation" placeholder="note/comment/additional info" style="width:100%;height:97px;font-size:1.1em;border:none"></textarea>
+                </form>
+            </div>
+            <div id="footnote-div" hidden></div>
+            <div id="foot-container-header">    
+                <ul class="fh-menu">
+                    <li class="fh-menu"><button id="do-anno" onclick="pop.pause();$('#post-sec, #cancel-anno, #button').slideDown();$('#do-anno, #footnote-div').hide()">put a note</button></li>
+                    <li class="fh-menu"><button id="cancel-anno" onclick="pop.play();$('#do-anno').show();$('#post-sec,#button').slideUp();$('#cancel-anno').hide();" hidden>cancel</button></li>
+                    <input id="button" value="post" type="button" onclick="pop.play();func();$('#post-sec').slideUp();$('#do-anno').show();$('#cancel-anno, #post-sec,#button').hide();$('#footnote-div').fadeIn()" hidden></input>
+                    <li class="fh-menu"><button id="hide-foot" style="float:right" onclick="$('#footnote-div').slideToggle();">Hide/Show POSTS</button></li>
+                </ul>
+            </div>
+        </div>
+    </body>
+    <script src="ytpop.js"></script>
+</html>

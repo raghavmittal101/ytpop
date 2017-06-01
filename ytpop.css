@@ -1,0 +1,93 @@
+#footnote-div{
+    width: inherit;
+    height: 200px;
+    color: floralwhite;
+    font-size: .9em;
+    background-color: rgba(245, 245, 245, 0.95);
+    font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
+overflow-y: auto;
+    border-top: 1px solid lightgrey;}
+
+li#myls{
+    min-height: 45px;
+    margin-bottom: 5px;
+border-bottom: solid rgba(255, 255, 255, 0.95) 1px;
+list-style: none;
+padding:5px 10px 0 10px;}
+
+user{
+    color: #58A7AA;
+    font-family: serif;
+    font-size: 1em;
+    margin-right: 1em;
+    float: right;}
+
+time{
+    float: right;
+color: #9B9A9A;}
+
+#myls:hover{
+    background-color: rgba(255, 255, 255, 1.0);}
+
+header, a.header{
+    text-decoration: none;
+    color: #4b4c4d;
+    font-weight: bold;
+font-size: 1.05em;}
+
+content{
+    color: #2f2d2d;
+font-size: 1.05em;}
+
+.foot-container{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    margin-left: -9px;}
+
+#foot-container-header{
+    width: inherit;
+    height:auto;
+    background-color: rgba(40, 50, 50, 0.8);}
+
+#post-sec{
+    border-top: 1px solid lightgrey;
+    height: 200px;
+    width: 100%;
+    background-color: rgba(230, 230, 230, 0.98);}
+
+#post-sec input{
+    color: #363636;
+    border: none;}
+
+button, #button{
+    background-color: transparent;
+    border: solid white 1px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 1px;
+    cursor: pointer;
+    padding: 6px;
+    color: white;}
+
+button:hover,#button:hover{
+    color: grey;
+    background: white;}
+
+table,td{
+    border: solid white 1px;}
+
+tr{
+    border-width: 10px;}
+
+td{
+    width: 100px}
+
+li.fh-menu{
+    list-style: none;
+    display: inline;}
+
+ul.fh-menu{
+    margin:0;
+    padding: 5px;}
